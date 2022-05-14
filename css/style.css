@@ -1,0 +1,247 @@
+:root{
+    font-size: 10px;
+}
+*{
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    font-family: 'Yaldevi', sans-serif;
+}
+
+body{
+    background-color: #3b3b3b;
+   
+}
+
+.sea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( 110.3deg,  rgba(73,93,109,1) 4.3%, rgba(49,55,82,1) 96.7% );
+}
+
+[alt="Jamaica"]{
+    display: block;
+    width: 100%;
+}
+
+.container,
+.forecast,
+.current-conditions{
+    margin: 1rem 3rem;
+}
+
+.container{
+    max-width: 702px;
+    padding: 0 1.5rem;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.current-conditions{
+    flex-basis: 300px;
+    box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.3), 0 0 2rem 0 rgba(0, 0, 0, 0.29);
+    border-radius: 0.5rem;
+}
+
+.image{
+    height: 200px;
+    background: url("../img/bg-ph.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.parish{
+    font-weight: 600;
+    color: white;
+    padding: 0.2rem 3rem;
+    text-align: center;
+    font-size: 1.92rem;
+    background-color: #19191969;
+    width: fit-content;
+    border-radius: 0px 3rem 0px 3rem;
+    margin: 1rem auto;
+}
+
+.details{
+    background-color: white;
+    text-align: center;
+}
+
+[alt="weather-icon"]{
+    display: block;
+    margin: 0 auto;
+}
+
+.weather{
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: rgb(95, 95, 95);
+}
+
+.town{
+    font-size: 1.76rem;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    color: rgb(95, 95, 95);
+    
+}
+
+.temp{
+    font-size: 6.4rem;
+    font-weight: 200;
+    color: cornflowerblue;
+}
+
+.sponsor{
+    font-weight: 700;
+    font-size: 1.12rem;
+    padding-bottom: 2rem;
+}
+
+.pin{
+    height: 1em;
+    width: 1em;
+    background-color: white;
+    border-radius: 1.5em;
+    border: 0.2em solid cornflowerblue;
+    position: absolute;
+    animation: mymove 1.6s infinite;
+}
+
+.pin{
+    animation: move 1.8s infinite;
+    animation-delay: 1.5s;
+}
+
+.pin:hover{
+    cursor: pointer;
+}
+
+.forecast{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 1rem auto;
+    gap: 0.8rem;
+    padding: 0 0.6rem;
+}
+
+.time{
+    border: 1px solid white;
+    border-radius: 3rem;
+    flex-basis: 225px;
+    flex-grow: 1;
+}
+
+.upper{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 0.8rem;
+    justify-content: center;
+}
+
+.time-hour{
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: fit-content;
+    padding: 0.4rem;
+    margin-right: 1.5rem;
+}
+
+[alt="weather icon"]{
+    width: 3.5rem;
+}
+
+.img-circle{
+    background-color: white;
+    border-radius: 4rem;
+}
+
+.hourly-forecast{
+    display: block;
+    text-align: center;
+    border-radius: 4rem;
+    color: white;
+    padding-bottom: 0.4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+@keyframes mymove{
+    from {box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.363);}
+    to {box-shadow: 0 0 0 0.6rem rgba(255, 255, 255, 0.363);}
+}
+
+@keyframes move{
+    from {box-shadow: 0 0 0 0.5rem rgba(25, 25, 25, 0.363);}
+    to {box-shadow: 0 0 0 0.2rem rgba(25, 25, 25, 0.363);}
+}
+
+/* locations */
+
+.a{left: 70%; top: 52.3%}
+
+.n{left: 70.5%; top: 57%}
+@media (max-width: 675px){
+    .a{left: 68%; top: 52.3%}
+}
+@media (max-width: 555px){
+    .a{left: 67%; top: 51%}
+}
+@media (max-width: 416px){
+    .a{left: 66%; top: 50%}
+}
+
+.b{left: 85%; top: 61.2%}
+
+.c{left: 83%; top: 46.5%}
+
+.d{left: 65%; top: 35.5%}
+
+.e{left: 52.5%; top: 32%}
+
+.f{left: 34%; top: 28.5%}
+
+.g{left: 23.2%; top: 28.5%}
+
+.h{left: 12.2%; top: 31%}
+
+.i{left: 14.3%; top: 42%}
+
+.j{left: 26%; top: 53%}
+
+.k{left: 39.5%; top: 53%}
+
+.l{left: 49.8%; top: 57%}
+
+.m{left: 60.7%; top: 56%;}
+
+
+.load{
+    background-color: rgba(255, 255, 255, 0.726);
+    position: absolute;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.load > .loading{
+    color: cornflowerblue;
+    font-size: 2.24rem;
+}
+
+.process{
+    display: none;
+}
+
+@media(max-width: 379px){
+    .pin{
+        font-size: 6px;
+    }
+}
